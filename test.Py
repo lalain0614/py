@@ -31,8 +31,8 @@ def fn1():
     start=input1.get()
     end=input2.get()
     
-    cnavas.itemconfig(eval(start),fill="blue")
-    cnavas.itemconfig(eval(end),fill="red")
+    cnavas.itemconfig(eval(start),fill="midnightblue")
+    cnavas.itemconfig(eval(end),fill="greenyellow")
            
     import copy
     import pandas as pd
@@ -197,27 +197,24 @@ def fn2():
     input2.delete(0,10000)
 
 
-
-
 line_1= cnavas.create_line(559,61,559,596,555,616,539,641,504,656,144,656,112,642,98,623,98,514,width=13,fill="coral")
 line_2= cnavas.create_line(790,61,790,220,773,250,734,263,559,263,535,265,520,273,507,299,width=13,fill="DodgerBlue3")
 line_3= cnavas.create_line(1011,66,920,66,904,72,897,96,897,268,891,288,866,296,559,296,546,307,542,315,542,431,width=13,fill="skyblue")
 line_4=cnavas.create_line(220,306,230,286,244,270,261,263,471,263,486,268,498,277,507,304,513,319,523,328,542,330,749,330,767,335,778,343,790,372,width=13,fill="NavajoWhite3")
-line = cnavas.create_line(111,62,111,211,111,233,128,251,143,263,172,266,193,272
+line_5= cnavas.create_line(111,62,111,211,111,233,128,251,143,263,172,266,193,272
                           ,212,288,216,312,216,423,227,445,252,468,283,473
                           ,302,466,328,430,width=13,fill="mediumpurple")
-
-line = cnavas.create_line(329,63,329,263,329,263,329,426,339,450,361,467,
+line_6= cnavas.create_line(329,63,329,263,329,263,329,426,339,450,361,467,
                           394,472,559,472,597,482,613,521,620,563,655,590,
                           658,592,756,592,790,557,790,375,790,352,794,334,815,318,850,318,990,318,1001,310,1009,293,1011,272,width=13,fill="green")
+
 
 btn = tkinter.Button(frame1, text="검색",command=fn1,width=10,height=3)
 btn.place(x=200,y=17)
 btn2= tkinter.Button(frame1,text="리셋",command=fn2,width=10,height=3)
 btn2.place(x=200,y=77)
+
     
-
-
 #1호선=01 2호선=02 3호선=03 4호선=04 동해선=05 부산김해=06
 노포=cnavas.create_oval(553,56,565,67,fill="snow",outline="orangered",width=2)
 범어사=cnavas.create_oval(553,81,565,92,fill="snow",outline="orangered",width=2)
@@ -269,7 +266,6 @@ btn2.place(x=200,y=77)
 낫개=cnavas.create_oval(92,563,104,575,fill="snow",outline="orangered",width=2)
 다대포항=cnavas.create_oval(92,538,104,550,fill="snow",outline="orangered",width=2)
 다대포해수욕장=cnavas.create_oval(92,512,104,524,fill="snow",outline="orangered",width=2)
-
 태화강=cnavas.create_oval(1010,60,1022,72,fill="snow",outline="skyblue",width=2)
 개운포=cnavas.create_oval(980,60,992,72,fill="snow",outline="skyblue",width=2)
 덕하=cnavas.create_oval(947,60,959,72,fill="snow",outline="skyblue",width=2)
@@ -292,7 +288,6 @@ btn2.place(x=200,y=77)
 거제_03=cnavas.create_oval(540,325,544,329,fill="NavajoWhite3",outline="NavajoWhite2",width=2)
 거제_05=cnavas.create_oval(540,331,544,335,fill="skyblue",outline="skyblue",width=2)
 거제해맞이=cnavas.create_oval(537,377,549,389,fill="snow",outline="skyblue",width=2)
-
 안평=cnavas.create_oval(784,59,796,71,fill="snow",outline="DodgerBlue3",width=2)
 고촌=cnavas.create_oval(784,89,796,101,fill="snow",outline="DodgerBlue3",width=2)
 윗반송=cnavas.create_oval(784,124,796,136,fill="snow",outline="DodgerBlue3",width=2)
@@ -305,7 +300,6 @@ btn2.place(x=200,y=77)
 충렬사=cnavas.create_oval(664,257,676,269,fill="snow",outline="DodgerBlue3",width=2)
 낙민=cnavas.create_oval(636,257,649,269,fill="snow",outline="DodgerBlue3",width=2)
 수안=cnavas.create_oval(603,257,615,269,fill="snow",outline="DodgerBlue3",width=2)
-
 체육공원=cnavas.create_oval(226,279,238,291,fill="snow",outline="NavajoWhite3",width=2)
 강서구청=cnavas.create_oval(257,258,269,270,fill="snow",outline="NavajoWhite3",width=2)
 구포=cnavas.create_oval(290,256,302,268,fill="snow",outline="NavajoWhite3",width=2)
@@ -336,21 +330,16 @@ btn2.place(x=200,y=77)
 불암 = cnavas.create_oval(165,261,176,272, fill="snow",outline="indigo",width=2)  # 불암
 대사 = cnavas.create_oval(186,266,197,278, fill="snow",outline="indigo",width=2)  # 대사
 평강 = cnavas.create_oval(203,279,213,290, fill="snow",outline="indigo",width=2)  # 평강
-
 대저 = cnavas.create_oval(209,300,222,321, fill="snow",outline="gray",width=2)  # 대저
 대저_01 = cnavas.create_oval(213,304,218,309, fill="indigo",outline="indigo",width=2)
 대저_02= cnavas.create_oval(213,312,218,316, fill="NavajoWhite3",outline="NavajoWhite2",width=2)
-
 등구 = cnavas.create_oval(211,350,222,361, fill="snow",outline="indigo",width=2)  # 등구
 덕두 = cnavas.create_oval(211,390,222,401, fill="snow",outline="indigo",width=2)  # 덕두
 공항 = cnavas.create_oval(220,435,231,446, fill="snow",outline="indigo",width=2)  # 공항
 서부산유통지구 = cnavas.create_oval(245,460,256,471, fill="snow",outline="indigo",width=2)  # 서부산 유통지구
 괘법르네시떼 = cnavas.create_oval(299,457,310,468, fill="snow",outline="indigo",width=2)  # 괘범 르네시떼
 
-
-
 # 부산 2호선
-
 양산 = cnavas.create_oval(323,56,335,67, fill="snow",outline="mediumseagreen",width=2)                  # 양산
 남양산 = cnavas.create_oval(323,74,335,86, fill="snow",outline="mediumseagreen",width=2)                # 남양산
 부산대양산캠퍼스=cnavas.create_oval(323,95,335,106,fill="snow",outline="mediumseagreen",width=2)        #부산대양산캠퍼스
@@ -361,23 +350,17 @@ btn2.place(x=200,y=77)
 율리=cnavas.create_oval(323,190,335,201,fill="snow",outline="mediumseagreen",width=2)        # 율리
 화명=cnavas.create_oval(323,209,335,220,fill="snow",outline="mediumseagreen",width=2)        # 화명
 수정=cnavas.create_oval(323,228,335,239,fill="snow",outline="mediumseagreen",width=2)        # 수정
-
 덕천=cnavas.create_oval(321,248,338,273,fill="snow",outline="gray",width=2)                  # 덕전
 덕천_01=cnavas.create_oval(327,255,331,259,fill="NavajoWhite2",outline="NavajoWhite2",width=2)
 덕천_04=cnavas.create_oval(327,263,331,267,fill="mediumseagreen",outline="mediumseagreen",width=2)
-
-
 구명 =cnavas.create_oval(323,288,335,299,fill="snow",outline="mediumseagreen",width=2)      # 구명   
 구남 =cnavas.create_oval(323,312,335,323,fill="snow",outline="mediumseagreen",width=2)      # 구남
 모라 =cnavas.create_oval(323,336,335,347,fill="snow",outline="mediumseagreen",width=2)      # 모라
 모덕 =cnavas.create_oval(323,360,335,371,fill="snow",outline="mediumseagreen",width=2)      # 모덕
 덕포 =cnavas.create_oval(323,384,335,395,fill="snow",outline="mediumseagreen",width=2)      # 덕포
-
-
 사상=cnavas.create_oval(320,412,337,441,fill="snow",outline="gray",width=2)                 # 사상
 사상_06=cnavas.create_oval(327,420,331,424,fill="indigo",outline="indigo",width=2)
 사상_02=cnavas.create_oval(327,428,331,432,fill="mediumseagreen",outline="mediumseagreen",width=2)
-   
 감전 =cnavas.create_oval(334,445,345,456,fill="snow",outline="mediumseagreen",width=2)          #  감전
 주례 =cnavas.create_oval(358,462,369,473,fill="snow",outline="mediumseagreen",width=2)          #  주례
 냉정 =cnavas.create_oval(390,467,401,478,fill="snow",outline="mediumseagreen",width=2)          #  냉정
@@ -385,7 +368,6 @@ btn2.place(x=200,y=77)
 동의대 =cnavas.create_oval(451,467,462,478,fill="snow",outline="mediumseagreen",width=2)        #  동의대
 가야 =cnavas.create_oval(482,467,493,478,fill="snow",outline="mediumseagreen",width=2)          #  가야
 부암 =cnavas.create_oval(515,467,526,478,fill="snow",outline="mediumseagreen",width=2)          #  부암
-
 전포 =cnavas.create_oval(588,476,599,487,fill="snow",outline="mediumseagreen",width=2)                 #전포
 국제금융센터_부산은행 =cnavas.create_oval(608,520,619,531,fill="snow",outline="mediumseagreen",width=2)  #국제금융센터_부산은행
 문현=cnavas.create_oval(617,561,628,572,fill="snow",outline="mediumseagreen",width=2)  # 문현
@@ -396,19 +378,14 @@ btn2.place(x=200,y=77)
 남천=cnavas.create_oval(784,500,795,511,fill="snow",outline="mediumseagreen",width=2)  # 남천
 금련산=cnavas.create_oval(784,450,795,461,fill="snow",outline="mediumseagreen",width=2)  # 금련사
 광안 =cnavas.create_oval(784,400,795,411,fill="snow",outline="mediumseagreen",width=2)  # 광안
-
 수영 =cnavas.create_oval(782,352,798,380,fill="snow",outline="gray",width=2) # 수영
 수영_01=cnavas.create_oval(788,360,792,365,fill="skyblue",outline="skyblue",width=2)
 수영_02=cnavas.create_oval(788,368,792,373,fill="coral",outline="orangered",width=2)
-
 민락 =cnavas.create_oval(795,322,806,333,fill="snow",outline="mediumseagreen",width=2)           # 민락
 센텀시티 =cnavas.create_oval(823,312,834,323,fill="snow",outline="mediumseagreen",width=2)       # 센텀시티
-
-
 벡스코 =cnavas.create_oval(850,285,868,322,fill="snow",outline="gray",width=2)     # 벡스코(시립미술관)
 벡스코_01 =cnavas.create_oval(857,296,862,301,fill="skyblue",outline="skyblue",width=2)
 벡스코_02=cnavas.create_oval(857,304,862,309,fill="mediumseagreen",outline="mediumseagreen",width=2)
-
 동백 =cnavas.create_oval(890,312,901,323,fill="snow",outline="mediumseagreen",width=2)  # 동백
 해운대 =cnavas.create_oval(940,312,951,323,fill="snow",outline="mediumseagreen",width=2)  # 해운대
 중동 =cnavas.create_oval(980,312,991,323,fill="snow",outline="mediumseagreen",width=2)  # 중동
@@ -484,7 +461,7 @@ cnavas.create_text(923,84,text='망양',font=('굴림체',10))
 cnavas.create_text(920,101,text='남창',font=('굴림체',10))
 cnavas.create_text(920,122,text='서생',font=('굴림체',10))
 cnavas.create_text(920,143,text='월내',font=('굴림체',10))
-cnavas.create_text(920,165,text='좌천',font=('굴림체',10))
+cnavas.create_text(940,165,text='좌천동해선',font=('굴림체',10))
 cnavas.create_text(920,186,text='일광',font=('굴림체',10))
 cnavas.create_text(920,207,text='기장',font=('굴림체',10))
 cnavas.create_text(932,228,text='오시리아',font=('굴림체',10))
